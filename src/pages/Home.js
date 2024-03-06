@@ -1,6 +1,6 @@
 import React from "react";
 import Header from '../components/Header';
-import  Banner1 from '../components/Banner';
+import { BannerHome } from '../components/Banner';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
@@ -11,7 +11,7 @@ const Home = () => {
         <>
             <Layout>
                 <Header />
-                <Banner1 />
+                <BannerHome />
                 <Card />
             </Layout>
             <Footer />

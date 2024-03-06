@@ -9,7 +9,7 @@ const Footer = () => {
                 <img src={logo} alt="Kasa logo" />
             </div>
             <div className="footer-content">
-                <p>2020 Kasa. All<span className="mobile-text"> rights reserved</span></p>
+                <p>&copy; 2020 Kasa. All<span className="mobile-text"> rights reserved</span></p>
             </div>
         </footer>
     )
