@@ -1,20 +1,16 @@
 import React from 'react'
 import '../styles/Banner.css'
 
-
 const Banner = ({ image, text }) => {
-    return (
-                <div className='banner'>
-                    {image}
-                {text !== undefined && <div className='banner-text'>
-                    {text}
-                </div>}
-                </div>
-            )
+  return (
+    <div className="banner">
+      {image}
+      {text !== undefined && <div className="banner-text">{text}</div>}
+    </div>
+  )
 }
 
-export default Banner;
-
+export default Banner
 
 // export const BannerHome = () => {
 //     return (

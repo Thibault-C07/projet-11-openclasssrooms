@@ -1,16 +1,17 @@
-  body, html {
-    margin: 0;
-    padding: 0;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
 
-  .layout {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1440px;
-    flex-direction: column;
-    padding: 0 100px;
-  }
+* {
+  box-sizing: border-box;
+}
+
+.layout {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+  flex-direction: column;
+  padding: 0 100px;
+}

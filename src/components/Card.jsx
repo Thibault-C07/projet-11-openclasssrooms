@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/Card.css';
-import LogementsCard from './Logements-card';
-import logementsData from '../data/logements.json';
+import '../styles/Card.css'
+import LogementsCard from './Logements-card'
+import logementsData from '../data/logements.json'
 
 const Card = () => {
   return (
@@ -17,7 +17,7 @@ const Card = () => {
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default Card;
+export default Card
