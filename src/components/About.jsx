@@ -28,8 +28,9 @@ const About = () => {
 
   return (
     <div className="about-collapse">
-      {collapseContents.map((collapseContent) => (
+      {collapseContents.map((collapseContent, index) => (
         <Collapse
+          key={index}
           title={collapseContent.title}
           content={collapseContent.content}
         />
