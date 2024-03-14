@@ -1,0 +1,16 @@
+.back-card {
+  margin-top: 43px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  row-gap: 50px;
+  column-gap: 50px;
+  padding: 56px 3.47% 43px 3.47%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  align-items: center;
+}

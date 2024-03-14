@@ -1,0 +1,36 @@
+.logements-card {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 340px;
+
+  .card-cover {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 340px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 0 0 10px 10px;
+      font-family: Montserrat;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}

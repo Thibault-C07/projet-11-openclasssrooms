@@ -1,0 +1,32 @@
+.slides-container {
+  position: relative;
+
+  .prev,
+  .next {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 96px;
+    height: 120px;
+  }
+
+  .prev {
+    left: 10px;
+    padding-right: 20px;
+  }
+
+  .next {
+    right: 10px;
+    padding-left: 20px;
+  }
+
+  .slide-image {
+    max-height: 415px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

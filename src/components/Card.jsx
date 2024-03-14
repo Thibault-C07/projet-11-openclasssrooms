@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Card.css'
+import '../styles/Card.scss'
 import LogementsCard from './Logements-card'
 import logementsData from '../data/logements.json'
 

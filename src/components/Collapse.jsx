@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../styles/Collapse.css'
+import '../styles/Collapse.scss'
 
 const Collapse = ({ title, content }) => {
   const [isCollapsed, setIsCollapsed] = useState(true)

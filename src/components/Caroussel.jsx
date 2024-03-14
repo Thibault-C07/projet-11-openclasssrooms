@@ -20,11 +20,17 @@ const Caroussel = () => {
     setLogement(selectedLogement)
   }, [id, navigate])
 
+  if (!logement) {
+    return <Error />
+  }
+
   const { pictures } = logement
 
-  return !logement ? (
-    <Error />
-  ) : (
+  // return !logement ? (
+  //   <Error />
+  // ) : (
+
+  return (
     <div>
       <Slideshow images={pictures} />
       <LogementLayout logement={logement} />

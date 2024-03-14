@@ -1,6 +1,6 @@
 import React from 'react'
 import Collapse from './Collapse'
-import '../styles/Logements-layout.css'
+import '../styles/Logements-layout.scss'
 
 const LogementsLayout = ({ logement }) => {
   const { title, description, host, rating, location, equipments, tags } =
