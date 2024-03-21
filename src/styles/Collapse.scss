@@ -1,3 +1,6 @@
+@import '../styles/utils/variables.scss';
+@import './utils/mixins.scss';
+
 .collapse {
   width: 100%;
 
@@ -5,11 +8,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff6060;
+    background-color: $primary-color;
     color: white;
     height: 54px;
     border-radius: 5px;
     padding: 10px 20px 10px 15px;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+      height: 30px;
+      padding: 10px;
+    }
 
     .collapse-title {
       cursor: pointer;
@@ -19,6 +27,11 @@
       line-height: 34.22px;
       width: 100%;
 
+      @media (max-width: map-get($breakpoints, medium)) {
+        font-size: 13px;
+        line-height: 19px;
+      }
+
       .collapse-icon {
         transition: transform 0.16s ease;
       }
@@ -27,17 +40,30 @@
     .collapse-icon.open {
       transform: rotate(180deg);
     }
+  }
 
-    .collapse-content {
-      background-color: #f6f6f6;
-      font-family: Montserrat;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 26px;
-      border-radius: 5px;
-      padding: 25px 25px 20px 20px;
-      width: 100%;
+  .collapse-content {
+    background-color: #f6f6f6;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    border-radius: 5px;
+    padding: 25px 25px 20px 20px;
+    width: 100%;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+      font-size: 12px;
+      line-height: 17px;
+      padding: 13px 20px 19px 20px;
     }
+  }
+}
+
+.collapse svg {
+  @media (max-width: map-get($breakpoints, medium)) {
+    width: 20px;
+    height: 16px;
   }
 }
 

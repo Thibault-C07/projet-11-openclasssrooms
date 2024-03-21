@@ -1,7 +1,14 @@
+@import '../styles/utils/variables.scss';
+@import '../styles/utils/mixins.scss';
+
 .logement-details {
   font-family: Montserrat;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: map-get($breakpoints, large)) {
+    flex-direction: column;
+  }
 
   .logement-title {
     font-size: 36px;
@@ -11,6 +18,11 @@
     text-align: left;
     color: #ff6060;
     margin-bottom: 1px;
+
+    @media (max-width: map-get($breakpoints, large)) {
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
 
   .logement-location {
@@ -34,10 +46,14 @@
     padding: 0;
     margin: 0;
 
+    @media (max-width: map-get($breakpoints, Xlarge)) {
+      padding-bottom: 16px;
+    }
+
     .logement-tags {
       height: 25px;
       border-radius: 8px;
-      background-color: #ff6060;
+      background-color: $primary-color;
       font-size: 14px;
       font-weight: 700;
       line-height: 20px;
@@ -47,11 +63,18 @@
       padding: 0 22px;
       line-height: 25px;
       width: auto;
+      color: white;
     }
   }
 
   .logement-host-and-rating {
     padding-bottom: 20px;
+
+    @media (max-width: map-get($breakpoints, large)) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     .logement-host {
       display: flex;
@@ -59,18 +82,38 @@
       padding-bottom: 21px;
       padding-top: 24px;
       align-items: center;
+
+      @media (max-width: map-get($breakpoints, large)) {
+        order: 2;
+        padding: 0;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: right;
+      }
     }
   }
 
   .logement-rating {
     display: flex;
     gap: 10px;
+
+    @media (max-width: map-get($breakpoints, large)) {
+      gap: 7px;
+    }
   }
 }
 
 .logements-collapse {
   display: flex;
   justify-content: space-between;
-  gap: 76px;
+  gap: 75px;
   padding-bottom: 50px;
+
+  @media (max-width: map-get($breakpoints, large)) {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
 }

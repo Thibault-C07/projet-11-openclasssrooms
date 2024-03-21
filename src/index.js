@@ -4,7 +4,7 @@ import './styles/index.scss'
 import reportWebVitals from './reportWebVitals'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/About'
+import AboutPage from './pages/AboutPage'
 import Error404 from './pages/Error404'
 import Logements from './pages/Logements'
 
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/about',
-    element: <About />,
+    element: <AboutPage />,
   },
   {
     path: '/logements/:id',

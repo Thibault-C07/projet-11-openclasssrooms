@@ -19,7 +19,8 @@ const Home = () => {
               className="banner-image-home"
             />
           }
-          text="Chez vous, partout et ailleurs"
+          firstText="Chez vous, "
+          secondText="partout et ailleurs"
         />
         <Card />
       </Layout>

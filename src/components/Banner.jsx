@@ -1,11 +1,16 @@
 import React from 'react'
 import '../styles/Banner.scss'
 
-const Banner = ({ image, text }) => {
+const Banner = ({ image, firstText, secondText }) => {
   return (
     <div className="banner">
       {image}
-      {text !== undefined && <div className="banner-text">{text}</div>}
+      {firstText !== undefined && (
+        <div className="banner-text">
+          {firstText}
+          <span className="text-responsive">{secondText}</span>
+        </div>
+      )}
     </div>
   )
 }
